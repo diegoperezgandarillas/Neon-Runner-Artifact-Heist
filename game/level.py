@@ -11,10 +11,10 @@ class Level:
         self.enemies = []
         self.coins = []
 
-        # Create the player
+        # The player is created
         self.player = Player(width // 2, height // 2)
 
-        # Spawn timers
+        # Some timers
         self.enemy_spawn_timer = 0
         self.coin_spawn_timer = 0
 
@@ -39,7 +39,7 @@ class Level:
             y = random.choice([-1, self.height]) # Spawn off-screen
             self._spawn_enemy(x, y)
 
-        # Spawn coins
+        # Some coins 
         self.coin_spawn_timer += dt
         if len(self.coins) < MAX_COINS and self.coin_spawn_timer > COIN_SPAWN_RATE:
             self.coin_spawn_timer = 0
