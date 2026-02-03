@@ -2,9 +2,9 @@
 FPS = 60
 
 # Character representations
-PLAYER_CHAR = '@'
-ENEMY_CHAR = 'E'
-COIN_CHAR = '$'
+PLAYER_CHAR = '@' # THIS IS THE PLAYER
+ENEMY_CHAR = 'E' # THIS IS THE ENEMY
+COIN_CHAR = '$' # COIIIIINS
 
 # Curses Color Pair IDs
 PLAYER_COLOR_PAIR = 1
@@ -22,7 +22,7 @@ ENEMY_SPEED = 2
 ENEMY_DAMAGE = 10
 
 # Coin settings
-COIN_SIZE = 15
+COIN_SIZE = 15 # The size of the coin
 COIN_SCORE = 10
 
 # Level and Spawning
