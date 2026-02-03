@@ -34,3 +34,5 @@ COIN_SPAWN_RATE = 2.0   # seconds
 
 # HUD settings
 FONT_SIZE = 36
+
+DUMMY_CONSTANT = 'dummy'
