@@ -24,11 +24,11 @@ class Game:
         self.reset_game()
 
     def run(self):
-        last_time = time.time()
+        l_time = time.time()
         while self.running:
             current_time = time.time()
-            dt = current_time - last_time
-            last_time = current_time
+            dt = current_time - l_time
+            l_time = current_time
 
             self.handle_events(dt)
             self.update(dt)
