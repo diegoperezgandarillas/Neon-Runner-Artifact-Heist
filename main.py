@@ -1,8 +1,8 @@
 import curses
-import time
 from game.level import Level
 from game.hud import HUD
 from game.constants import *
+import time
 
 class Game:
     def __init__(self, stdscr):
