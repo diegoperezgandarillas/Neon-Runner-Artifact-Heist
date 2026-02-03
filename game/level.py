@@ -1,8 +1,9 @@
 import random
-from .player import Player
-from .enemy import Enemy
-from .coin import Coin
 from .constants import *
+from .player import Player
+from .coin import Coin
+from .enemy import Enemy
+
 
 class Level:
     def __init__(self, width, height):
