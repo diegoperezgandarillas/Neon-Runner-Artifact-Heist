@@ -60,7 +60,7 @@ class Player:
         Args:
             amount: Amount of damage to apply (positive number)
         """
-        self.health -= amount
+        self.health = amount
         # Prevent health from going below zero
         if self.health < 0:
             self.health = 0
