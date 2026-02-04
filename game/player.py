@@ -1,8 +1,19 @@
 from .constants import *
 
+
+
 class Player:
-    """Represents the player character in the game."""
+    """
+    Player character controlled by the user.
     
+    Attributes:
+        x (float): X position on screen
+        y (float): Y position on screen
+        char (str): Visual character representation
+        speed (int): Movement speed
+        health (int): Current health points
+        score (int): Current score from collecting coins
+    """
     def __init__(self, x, y):
         """
         Initialize a new player at the specified position.
@@ -13,10 +24,10 @@ class Player:
         """
         self.x = x
         self.y = y
-        self.char = PLAYER_CHAR  # Visual character representation
-        self.speed = PLAYER_SPEED  # Movement speed per frame
-        self.health = PLAYER_START_HEALTH  # Current health points
-        self.score = 0  # Player's accumulated score
+        self.char = PLAYER_CHAR 
+        self.speed = PLAYER_SPEED  
+        self.health = PLAYER_START_HEALTH  
+        self.score = 0
 
     def move(self, dx, dy, max_x, max_y):
         """

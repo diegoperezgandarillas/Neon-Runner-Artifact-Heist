@@ -20,6 +20,6 @@ class HUD:
     def draw_game_over(self):
         height, width = self.stdscr.getmaxyx()
         game_over_txt = "GAME OVER!!!!"
-        restart_text = "Press 'r' to Restart or 'q' to Quit"
-        self.stdscr.addstr(height // 2 - 1, width // 2 - len(game_over_text) // 2, game_over_text)
-        self.stdscr.addstr(height // 2 + 1, width // 2 - len(restart_text) // 2, restart_text)
+        restart_txt = "Press 'r' to Restart or 'q' to Quit"
+        self.stdscr.addstr(height // 2 - 1, width // 2 - len(game_over_txt) // 2, game_over_txt)
+        self.stdscr.addstr(height // 2 + 1, width // 2 - len(restart_txt) // 2, restart_txt)
