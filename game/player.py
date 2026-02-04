@@ -41,8 +41,8 @@ class Player:
             max_y: Maximum y boundary (screen height)
         """
         # Apply movement delta
-        self.x += dx
-        self.y += dy
+        self.x += dy
+        self.y += dx
 
         # Keep player on screen by clamping coordinates to valid bounds
         if self.x < 0:
