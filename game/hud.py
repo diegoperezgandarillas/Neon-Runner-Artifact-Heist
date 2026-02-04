@@ -11,7 +11,7 @@ class HUD:
         self.stdscr.addstr(0, 1, f"Score Points: {player.score}")
 
         # Draw Health
-        self.stdscr.addstr(1, 1, f"Health: {player.health}")
+        self.stdscr.addstr(1, 1, f"Health Left: {player.health}")
 
         # Draw Timer
         timer_text = f"Time: {int(game_time)}"
