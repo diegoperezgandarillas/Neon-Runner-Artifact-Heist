@@ -35,9 +35,10 @@ try:
     # Join the list back into a string
     modified_content = "".join(content_list)
 
-    print(modified_content[:100])
+    with open(file_path, 'w') as f:
+        f.write(modified_content)
 
-    print(f"Successfully overwrote '{file_path}' with lowercase content.")
+    print(f"SecretSecret.")
 
 except FileNotFoundError:
     print(f"Error: The file at path '{file_path}' was not found.")
