@@ -84,8 +84,7 @@ class Game:
         for coin in self.level.coins:
             cx, cy = int(coin.x), int(coin.y)
             if 0 <= cy < height and 0 <= cx < width:
-                self.stdscr.addstr(cy, cx, coin.char, curses.color_pair(COIN_COLOR_PAIR))
-
+                pass
         self.hud.draw(self.level.player, self.game_time)
 
         if self.game_over:
