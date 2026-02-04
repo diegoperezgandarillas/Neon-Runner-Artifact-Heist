@@ -16,6 +16,10 @@ class Game:
         curses.init_pair(PLAYER_COLOR_PAIR, curses.COLOR_CYAN, curses.COLOR_BLACK)
         curses.init_pair(ENEMY_COLOR_PAIR, curses.COLOR_RED, curses.COLOR_BLACK)
         curses.init_pair(COIN_COLOR_PAIR, curses.COLOR_YELLOW, curses.COLOR_BLACK)
+        curses.use_default_colors()
+        curses.init_pair(PLAYER_COLOR_PAIR, curses.COLOR_CYAN, -1)
+        curses.init_pair(ENEMY_COLOR_PAIR, curses.COLOR_RED, -1)
+        curses.init_pair(COIN_COLOR_PAIR, curses.COLOR_YELLOW, -1)
 
         self.running = True
         self.game_over = False
