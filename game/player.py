@@ -1,5 +1,6 @@
 from .constants import *
-
+import random
+ 
 # I DID THIS COMPLETELY< EVERTHING HERE WAZ ME
 
 class Player:
@@ -64,6 +65,10 @@ class Player:
         # Prevent health from going below zero
         if self.health < 0:
             self.health = 0
+
+        # Dumb but funny visual change: player character changes when hit!
+        dizzy_chars = ['@', '#', '%', '&', '?', '!']
+        self.char = random.choice(dizzy_chars)
 
     def add_score(self, amount):
         """
