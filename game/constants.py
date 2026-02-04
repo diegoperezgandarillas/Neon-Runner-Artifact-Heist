@@ -18,7 +18,7 @@ PLAYER_START_HEALTH = 100
 
 # Enemy settings
 ENEMY_SIZE = 25
-ENEMY_SPEED = 3
+ENEMY_SPEED = 40
 ENEMY_DAMAGE = 10
 
 # Coin settings
