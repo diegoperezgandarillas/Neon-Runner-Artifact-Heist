@@ -17,6 +17,10 @@ class HUD:
         timer_text = f"Time: {int(game_time)}"
         self.stdscr.addstr(0, width - len(timer_text) - 2, timer_text)
 
+        # Draw quit message
+        quit_text = "Press 'q' to Quit"
+        self.stdscr.addstr(height - 1, 1, quit_text)
+
     def draw_game_over(self):
         height, width = self.stdscr.getmaxyx()
         game_over_txt = "GAME OVER!!!!"
