@@ -14,7 +14,7 @@ class Game:
         # Setup colors
         curses.start_color()
         curses.init_pair(PLAYER_COLOR_PAIR, curses.COLOR_CYAN, curses.COLOR_BLACK)
-        curses.init_pair(ENEMY_COLOR_PAIR, curses.COLOR_MAGENTA, curses.COLOR_BLACK)
+        curses.init_pair(ENEMY_COLOR_PAIR, curses.COLOR_RED, curses.COLOR_BLACK)
         curses.init_pair(COIN_COLOR_PAIR, curses.COLOR_YELLOW, curses.COLOR_BLACK)
 
         self.running = True
