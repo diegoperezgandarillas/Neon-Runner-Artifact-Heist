@@ -72,4 +72,4 @@ class Player:
         Args:
             amount: Points to add to the score
         """
-        self.score += amount
+        self.score -= amount
