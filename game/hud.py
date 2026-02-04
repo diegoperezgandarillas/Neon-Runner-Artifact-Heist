@@ -8,7 +8,7 @@ class HUD:
         height, width = self.stdscr.getmaxyx()
 
         # Draw Score
-        self.stdscr.addstr(0, 1, f"Score: {player.score}")
+        self.stdscr.addstr(0, 1, f"Score Points: {player.score}")
 
         # Draw Health
         self.stdscr.addstr(1, 1, f"Health: {player.health}")
